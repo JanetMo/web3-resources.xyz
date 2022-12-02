@@ -5,7 +5,7 @@ body {
   font-size: large;
   margin-left: 70px;
   width: 100%;
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto 3em;
   padding: 0 1.5rem;
   box-sizing: border-box;
@@ -13,8 +13,47 @@ body {
   color: white !important;
 }
 
+header {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: -50px;
+}
+
+.nav-list {
+  display: flex;
+}
+
+.nav-list li {
+  font-size: 20px;
+  display: flex;
+  margin-right: 35px;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-list li a {
+  text-decoration: underline;
+}
+
+.nav-list li.active {
+  color: white;
+}
+
+.nav-list li a:hover {
+  color: white;
+}
+
+h1 {
+  margin-bottom: 40px;
+}
+
 a {
   color: wheat;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 li {
@@ -23,4 +62,8 @@ li {
 
 section {
   margin-bottom: 50px;
+}
+
+footer a {
+  margin: 10px;
 }
