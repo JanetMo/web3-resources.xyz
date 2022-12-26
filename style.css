@@ -74,37 +74,41 @@ form {
 .feedback-input {
   color: white;
   font-size: 18px;
+  font-family: "M PLUS 1 Code", sans-serif;
   border-radius: 5px;
-  line-height: 22px;
   background-color: transparent;
-  padding: 13px;
+  padding: 10px;
   margin-bottom: 15px;
   width: 100%;
   box-sizing: border-box;
   outline: 0;
 }
 
+#contactformh2 {
+  /* noch relativ angeben */
+  margin-left: 120px;
+}
+
 textarea {
   height: 150px;
   line-height: 150%;
-  resize: vertical;
+  font-family: "M PLUS 1 Code", sans-serif;
 }
 
 [type="submit"] {
-  width: 100%;
+  width: 45%;
   background: #101318de;
   border-radius: 5px;
   border: 0;
   cursor: pointer;
   color: white;
-  font-size: 24px;
+  font-size: 22px;
   padding-top: 10px;
   padding-bottom: 10px;
-  transition: all 0.3s;
-  margin-top: -4px;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 [type="submit"]:hover {
-  background: #424552;
+  background: wheat;
+  color: black;
 }
