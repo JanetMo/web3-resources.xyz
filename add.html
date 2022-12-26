@@ -87,17 +87,19 @@
     <br />
 
     <h2 id="contactformh2">Contact form</h2>
-    <form>
+    <form class="contactform" onsubmit="sendMessage(); reset(); return false;">
       <input
         name="name"
         type="text"
         class="feedback-input"
+        id="sendername"
         placeholder="(nick) name"
       />
       <input
         name="email"
         type="text"
         class="feedback-input"
+        id="senderemail"
         placeholder="e-mail"
       />
 
@@ -105,6 +107,7 @@
         name="category"
         type="text"
         class="feedback-input"
+        id="category"
         placeholder="category"
       />
 
@@ -112,12 +115,14 @@
         name="resource"
         type="text"
         class="feedback-input"
+        id="resource"
         placeholder="link to the resource"
       />
 
       <textarea
         name="text"
         class="feedback-input"
+        id="text"
         placeholder="comment"
       ></textarea>
       <input type="submit" value="submit the resource" />
@@ -129,5 +134,44 @@
             <a href=imprint.html>Imprint</a>
         </footer>
     </section>
+
+
+
+    <script src="https://smtpjs.com/v3/smtp.js"> </script>
+
+  <script> 
+
+    // const form = document.querySelector('.contactform');
+
+    function sendMessage() {
+      //e.preventDefault();
+      
+        //const name = document.querySelector('.formname'),
+        //email = document.querySelector('.formemail'),
+        //category = document.querySelector('.formcategory'),
+        //resource = document.querySelector('.formresource'),
+        //text = document.querySelector('.formtext'),
+    
+    // function to send the email 
+        Email.send({
+          SecureToken : "bb8c8711-4d47-47f5-9440-5b4ce21eda78N",
+          To : 'web3-resources@web.de',
+          From : document.getElementById("senderemail").value,
+          Subject : "web3 resources contact form",
+          Body : "Name: " + document.getElementById("sendername").value +
+                "<br> E-mail: " + document.getElementById("senderemail").value +
+                "<br> Category: " + document.getElementById("category").value +
+                "<br> Resource: " + document.getElementById("resource").value +
+                "<br> Text: " + document.getElementById("text").value
+      }).then(
+        message => alert("Thanks for your submission")
+      );
+    }
+
+    // add an event listener
+     //  form.addEventListener('submit', sendMessage);
+
+  </script>
+
   </body>
 </html>
