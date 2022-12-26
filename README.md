@@ -8,9 +8,9 @@ I often get asked, how to start learning about web3. My answer is always: There 
 
 You can learn for yourself, and most of the **really valuable** content is free to access.
 
-You will find different categories (media resources, courses, applications areas, developer tutorials etc.) to meet your level of experience and learning type - whether you are just curious or already a web3 enthusiast.
+> **Visit: https://web3-resources.xyz/** \*/
 
-> Visit: https://web3-resources.xyz/
+You will find different categories (media resources, courses, applications areas, developer tutorials etc.) to meet your level of experience and learning type - whether you are just curious or already a web3 enthusiast.
 
 ### Contribute
 
