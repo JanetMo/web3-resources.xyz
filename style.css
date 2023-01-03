@@ -41,6 +41,26 @@ header {
   color: white;
 }
 
+#addbutton {
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 20px;
+  background-color: wheat;
+  border: none;
+  border-radius: 5px;
+}
+
+#addbutton a {
+  font-family: "M PLUS 1 Code", sans-serif;
+  color: black;
+}
+
+#addbutton a:hover {
+  color: #101318de;
+  font-weight: 1000;
+}
+
 h1 {
   margin-bottom: 40px;
 }
