@@ -34,4 +34,14 @@ function sendMessage() {
     document.getElementById("submitresult").innerText =
       "There was an error sending your message. Please contact the administrator";
   }
+
+  // function isNotEmpty(value) {
+  //   if (value == null || typeof value == "undefined") return false;
+  //   return value.length > 0;
+  // }
+  // function isEmail(senderemail) {
+  //   let regex =
+  //     /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
+  //   return regex.test(String(email).toLowerCase());
+  // }
 }
