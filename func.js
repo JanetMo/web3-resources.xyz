@@ -16,7 +16,9 @@ function sendMessage() {
         "<br> Resource: " +
         document.getElementById("resource").value +
         "<br> Text: " +
-        document.getElementById("text").value,
+        document.getElementById("text").value +
+        "<br> Checkbox: " +
+        document.getElementById("checkbox").value,
     }).then((message) => {
       console.log(`Email send result: ${message}`);
       if (message === "OK") {
