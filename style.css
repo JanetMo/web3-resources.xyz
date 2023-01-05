@@ -1,4 +1,6 @@
 body {
+  background-image: url("images/background.png");
+  background-size: 100%;
   font-family: "M PLUS 1 Code", sans-serif;
   font-size: large;
   margin-left: 70px;
@@ -7,14 +9,14 @@ body {
   margin: 0 auto 1em;
   padding: 0 1.5rem;
   box-sizing: border-box;
-  background-color: #101318de;
+  /* background-color: #101318de; */
   color: white !important;
 }
 
 header {
   margin-top: -50px;
   margin-bottom: -80px;
-  margin-left: -200px;
+  margin-left: -350px;
   margin-right: -50px;
 }
 
@@ -25,7 +27,7 @@ header {
 .nav-list li {
   font-size: 22px;
   display: flex;
-  margin-right: 25px;
+  margin-right: 35px;
   justify-content: center;
   align-items: center;
 }
@@ -137,4 +139,10 @@ textarea {
 
 #footerlogo {
   margin-bottom: -30px;
+}
+
+footer {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  margin-left: -50px;
 }
