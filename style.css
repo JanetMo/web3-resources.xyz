@@ -3,8 +3,8 @@ body {
   font-size: large;
   margin-left: 70px;
   width: 100%;
-  max-width: 900px;
-  margin: 0 auto 3em;
+  max-width: 800px;
+  margin: 0 auto 1em;
   padding: 0 1.5rem;
   box-sizing: border-box;
   background-color: #101318de;
@@ -15,6 +15,7 @@ header {
   margin-top: 50px;
   margin-bottom: 50px;
   margin-left: -50px;
+  margin-right: -100px;
 }
 
 .nav-list {
@@ -22,7 +23,7 @@ header {
 }
 
 .nav-list li {
-  font-size: 20px;
+  font-size: 22px;
   display: flex;
   margin-right: 35px;
   justify-content: center;
@@ -41,11 +42,17 @@ header {
   color: white;
 }
 
+#logo {
+  max-width: 10%;
+  height: auto;
+}
+
 #addbutton {
   padding: 10px;
   padding-left: 20px;
   padding-right: 20px;
-  font-size: 20px;
+  font-size: 22px;
+  font-weight: bold;
   background-color: wheat;
   border: none;
   border-radius: 5px;
@@ -56,9 +63,8 @@ header {
   color: black;
 }
 
-#addbutton a:hover {
-  color: #101318de;
-  font-weight: 1000;
+#addbutton:hover {
+  background-color: white;
 }
 
 h1 {
