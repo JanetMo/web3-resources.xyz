@@ -14,9 +14,9 @@ body {
 }
 
 header {
-  margin-top: -50px;
-  margin-bottom: -80px;
-  margin-left: -350px;
+  margin-top: -80px;
+  margin-bottom: -120px;
+  margin-left: -400px;
   margin-right: -50px;
 }
 
@@ -42,6 +42,31 @@ header {
 
 .nav-list li a:hover {
   color: white;
+}
+
+@media (max-width: 920px) {
+  header {
+    margin-top: 0px;
+    margin-bottom: 60px;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .nav-list {
+    flex-direction: column;
+    margin-top: -40px;
+  }
+  .nav-list li {
+    margin-bottom: 15px;
+  }
+  #homemenu {
+    margin-top: -90px;
+  }
+  #footerlogo {
+    margin-left: 60px;
+  }
+  [type="submit"] {
+    min-width: 250px;
+  }
 }
 
 #addbutton {
