@@ -1,10 +1,11 @@
 // function to send the email
 function sendMessage() {
   if (document.getElementById("checkbox").checked === false) {
-    document.getElementById("submitresult").innerText =
-      "Please check the checkbox";
+    document.getElementById("submitresult").innerHTML =
+      "<span style='color:red'>Please confirm the checkbox";
     return;
   }
+
   //console.log(document.getElementById("checkbox").checked);
   //return;
   try {
@@ -29,17 +30,17 @@ function sendMessage() {
     }).then((message) => {
       console.log(`Email send result: ${message}`);
       if (message === "OK") {
-        document.getElementById("submitresult").innerText =
-          "Your message has been forwarded. Thank you!";
+        document.getElementById("submitresult").innerHTML =
+          "<span style='color:wheat'>Your message has been forwarded. Thank you!";
       } else {
-        document.getElementById("submitresult").innerText =
-          "Your message could not be sent. Please try again!";
+        document.getElementById("submitresult").innerHTML =
+          "<span style='color:wheat'>Your message could not be sent. Please try again!";
       }
     });
   } catch (e) {
     console.error(`Error sending email: ${message}`);
     document.getElementById("submitresult").innerText =
-      "There was an error sending your message. Please contact the administrator";
+      "<span style='color:red'>There was an error sending your message. Please contact the administrator";
   }
 
   // function isNotEmpty(value) {
