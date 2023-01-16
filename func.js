@@ -1,5 +1,12 @@
 // function to send the email
 function sendMessage() {
+  if (document.getElementById("checkbox").checked === false) {
+    document.getElementById("submitresult").innerText =
+      "Please check the checkbox";
+    return;
+  }
+  //console.log(document.getElementById("checkbox").checked);
+  //return;
   try {
     Email.send({
       SecureToken: "4bef7b02-0f08-4f19-a770-a77e63278246",
@@ -18,7 +25,7 @@ function sendMessage() {
         "<br> Text: " +
         document.getElementById("text").value +
         "<br> Checkbox: " +
-        document.getElementById("checkbox").value,
+        document.getElementById("checkbox").checked,
     }).then((message) => {
       console.log(`Email send result: ${message}`);
       if (message === "OK") {
