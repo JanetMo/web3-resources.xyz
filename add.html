@@ -86,7 +86,7 @@
   <br />
 
   <h2 id="contactformh2">Contact form</h2>
-  <form class="contactform" onsubmit="sendMessage(); reset(); return false;">
+  <form class="contactform" id="form" onsubmit="return sendMessage(event)">  
     <input name="name" type="text" class="feedback-input" id="sendername" placeholder="(nick) name" />
     <input name="email" type="text" class="feedback-input" id="senderemail" placeholder="e-mail" />
 
