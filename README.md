@@ -1,7 +1,7 @@
 # How to learn about web3?
 
 **_Logo_**
-![logo](images/logo.svg)
+![logo](images/logo.png)
 
 web3-resources.xyz is a curated list of **free resources** to learn and start building in web3.
 
