@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/JanetMo/web3-resources.xyz/issues"
   },
-  "homepage": "https://github.com/JanetMo/web3-resources.xyz#readme"
+  "homepage": "https://github.com/JanetMo/web3-resources.xyz#readme",
+  "dependencies": {
+    "next": "^13.1.6"
+  }
 }
