@@ -1,17 +1,3 @@
-// function isEmail(sendermail) {
-//   let regex =
-//     /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
-//   return regex.test(String(senderemail).toLowerCase());
-// }
-
-// function ValidateEmail(sendermail) {
-//   if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(sendermail.value)) {
-//     return true;
-//   }
-//   alert("You have entered an invalid email address!");
-//   return false;
-// }
-
 // function to send the email
 function sendMessage(event) {
   const sendermail = document.getElementById("senderemail");
@@ -29,7 +15,16 @@ function sendMessage(event) {
   // document.getElementById("submitresult").innerHTML =
   //   "<span style='color:red'>Please provide a valid e-mail address";
   // event.preventDefault();
-  // return;
+  // return false;
+
+  const resourcelink = document.getElementById("resource");
+  console.log(resourcelink.value);
+  if (resourcelink.value == "" || resourcelink.value == null) {
+    document.getElementById("submitresult").innerHTML =
+      "<span style='color:red'>Please provide a resource link";
+    event.preventDefault();
+    return;
+  }
 
   if (document.getElementById("checkbox").checked === false) {
     document.getElementById("submitresult").innerHTML =
