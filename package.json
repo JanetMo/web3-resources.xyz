@@ -1,11 +1,14 @@
 {
   "name": "web3-resources.xyz",
-  "homepage": "",
   "version": "1.0.0",
   "description": "**_Logo_**",
   "main": "func.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export"
   },
   "repository": {
     "type": "git",
