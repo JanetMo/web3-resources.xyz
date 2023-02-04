@@ -1,7 +1,7 @@
 {
   "name": "web3-resources.xyz",
   "version": "1.0.0",
-  "description": "**_Logo_**",
+  "description": "web3 resources",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/JanetMo/web3-resources.xyz/issues"
   },
-  "homepage": "https://github.com/JanetMo/web3-resources.xyz#readme"
+  "homepage": "https://github.com/JanetMo/web3-resources.xyz#readme",
+  "dependencies": {
+    "debug": "^4.3.4"
+  }
 }
