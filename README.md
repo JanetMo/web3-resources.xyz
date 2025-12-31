@@ -19,6 +19,6 @@ You will find different categories (media resources, courses, applications areas
 Please note: The resources have to meet the following criteria:
 
 - related to web3/blockchain/DLT
-- free to access (except books)
+- free to access (except for books)
 - fit in one of the categories
 - no promotional content
